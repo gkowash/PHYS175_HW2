@@ -44,14 +44,6 @@ int main(int argc, char **argv) {
   vector<vector<int>> abValues;
   vector<int> ab;
   int product;
-  bool show = false;
-
-  //use option "show" to print all palindromes found to the console
-  if (argc > 1) {
-    if (string(argv[1]) == "show") {
-      show = true;
-    }
-  }
 
   //loop through all combinations of three-digit numbers and record palindromes
   for (int a = 999; a > 99; a--) {
@@ -64,9 +56,11 @@ int main(int argc, char **argv) {
     }
   }
 
-  //set 'showAll' to true to see all palindromes discovered
-  if (show) {
-    printPalindromes(palindromes);
+  //use option "show" to print all palindromes to the console
+  if (argc > 1) {
+    if (string(argv[1]) == "show") {
+      printPalindromes(palindromes);
+    }
   }
 
   //find the largest palindrome and the pair of numbers that produced it

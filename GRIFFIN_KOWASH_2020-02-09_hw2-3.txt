@@ -1,0 +1,4 @@
+Written answer for Homework 2 Problem 3
+
+Each vector element is allocated 4 bytes in memory. Elements are stored in adjacent memory addresses, in increasing
+order as they are added. For example, if Element 0 is at 0x561109fce6a0, then Element 1 will be stored at 0x561109fce6a4.

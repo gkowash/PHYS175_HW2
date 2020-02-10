@@ -69,6 +69,8 @@ int main(int argc, char **argv) {
   int a = ab[0];
   int b = ab[1];
 
+  cout << "What is the largest numerical palindrome that is the product of two three-digit numbers? (Also, how many are there in total?)\n\n";
+  
   //print results to the console
   cout << "Total palindromes: " << palindromes.size() << endl;
   cout << "Largest palindrome: " << *maxPalindrome << " = " << a << "*" << b << endl;

@@ -28,13 +28,14 @@ int methodOne() {
 /*finds the number of multiples of 3, 5, and 15 up to 1000, which are stored in the "num"
 variables. It then takes advantage of the formula for the sum of the first
 n natural numbers to find the sum of all multiples of 3 and 5. Finally, it subtracts off
-all multiples of 15 from this total to account for double-counted values. More complicated
-conceptually, but hopefully more efficient computationally (even though efficiency isn't
-a concern here).*/
+all multiples of 15 from this total to account for double-counted values. */
 
+
+//formula for the sum of first n natural numbers
 int sumTo(int n) {
 	return n * (n + 1) / 2;
 }
+
 
 int methodTwo() {
   //note that "int" truncates any decimal values, effectively acting as floor division
@@ -45,7 +46,7 @@ int methodTwo() {
 
 
 int main() {
-	cout << "Sum of all multiples of 3 and 5 up to 1000" << endl;
+	cout << "___Sum of all multiples of 3 and 5 up to 1000___\n\n";
 	cout << "Result of Method 1: " << methodOne() << endl;
 	cout << "Result of Method 2: " << methodTwo() << endl;
 	return 1;

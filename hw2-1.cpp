@@ -40,7 +40,13 @@ int main() {
 	Q.push_back(6.1);
 	Q.push_back(7.3);
 	Q.push_back(2.2);
-	
+
+	//print vector, sum, mean, and standard deviation to the console
+	cout << "Vector: (";
+	for (int i = 0; i < Q.size() - 1; i++) {
+	  cout << Q[i] << ", ";
+	}
+	cout << Q[Q.size()-1] << ")" << endl;
 	cout << "Sum: " << vecSum(Q) << endl;
 	cout << "Mean: " << vecAvg(Q) << endl;
 	cout << "Standard deviation: " << vecStd(Q) << endl;

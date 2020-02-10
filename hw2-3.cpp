@@ -91,7 +91,7 @@ int main() {
     }
   }
 
-  cout << "\n\nAll right, it's time! I am honored to present to you your Very Own Vector! [Press 'Enter' to continue]" << endl;
+  cout << "\n\nAll right folks, it's time. I am honored to present to you your Very Own Vector! [Press 'Enter' to continue]" << endl;
   cin.ignore();
   cin.get();
   printVector(vec);
